@@ -9,11 +9,14 @@ Dir::~Dir(){}
 void Dir::GetPaths(char* input, char* out){
     dirp = opendir(input);
     if (dirp == NULL) {
-        perror("openning dir");
+        //perror("openning dir");
+        strcpy(out,"No such file or directory\n");
     }
-    while (d = readdir(dirp)) {
-        strcat(out,d->d_name);
-        strcat(out,"\n");     
+    else{
+        while (d = readdir(dirp)) {
+            strcat(out,d->d_name);
+            strcat(out,"\n");     
+        }
     }
     closedir (dirp);
 }

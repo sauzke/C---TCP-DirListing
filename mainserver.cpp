@@ -41,7 +41,7 @@ static void* SocketThread(void* lp){
     // SocketServer *ss = (SocketServer*) lp;
     int sock = *(int *) lp;
 
-    cout<<sock<<"\n";
+    //cout<<sock<<"\n";
 
     char out[1024];
     ss->GetRequest(sock, out);
