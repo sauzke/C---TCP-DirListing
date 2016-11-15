@@ -1,4 +1,3 @@
-#pragma once
 #include <sys/dir.h>
 class Dir{
     public:

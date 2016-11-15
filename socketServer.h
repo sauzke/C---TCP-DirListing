@@ -1,4 +1,3 @@
-#pragma once
 class SocketServer{
     public:
         SocketServer(int port);

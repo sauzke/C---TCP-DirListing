@@ -48,7 +48,6 @@ void SocketServer::GetRequest(int msgsock, char* out){
         perror("reading socket");
     }else{
         strcpy(out,buf);
-        //printf(buf);
     }
 }
 
