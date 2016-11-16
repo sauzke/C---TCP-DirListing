@@ -15,7 +15,7 @@ void Dir::GetPaths(char* input, char* out){
     else{
         while (d = readdir(dirp)) {
             strcat(out,d->d_name);
-            strcat(out,"\n");     
+            strcat(out,",");     
         }
     }
     closedir (dirp);
