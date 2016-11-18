@@ -43,7 +43,7 @@ int SocketServer::Accept(){
         perror("accept");
     }
 
-    std::cout<<"accepted\n";
+    //std::cout<<"accepted\n";
 
     return msgsock;
 }
